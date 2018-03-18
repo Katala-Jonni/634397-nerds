@@ -4,20 +4,23 @@
 <head>
   <meta charset="UTF-8">
   <title>HTML Academy: Нёрдс Каталог</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,900" rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
   <header class="main-header">
     <a class="main-header-logo" href="index.html"><img src="img/svg-nerds/nerds-logo.svg" width="160" height="65" alt="Логотип Нёрдс, переход на главную страницу"></a>
     <nav class="main-navigation">
-      <ul class="main-navigation-list">
+      <ul class="main-navigation-list hidden-list-style">
         <li><a href="#">Студия</a></li>
         <li><a href="#">Клиенты</a></li>
-        <li><a href="catalog.html">Магазин</a></li>
+        <li><a href="#">Магазин</a></li>
         <li><a href="#">Контакты</a></li>
       </ul>
     </nav>
-    <ul class="user-interface-list">
+    <ul class="user-interface-list hidden-list-style">
       <li class="user-interface-item"><a href="#">Корзина</a></li>
     </ul>
     <h1>Магазин готовых шаблонов</h1>
@@ -27,23 +30,23 @@
       <form class="filter" method="get" action="https://echo.htmlacademy.ru">
         <fieldset class="filter-range">
           <legend>Стоимость:</legend>
-          <p>
+          <p class="filter-range-wrap">
             <label for="filter-range"></label>
             <input id="filter-range" type="range" name="range">
           </p>
           <!-- Уточнить - здесь разделить параграфом? -->
-          <p>
+          <p class="filter-range-from">
             <label for="filter-range-from">От</label>
             <input type="text" name="range-from" id="filter-range-from" value="0">
           </p>
-          <p>
+          <p class="filter-range-to">
             <label for="filter-range-to">До</label>
             <input type="text" name="range-to" id="filter-range-to" value="15000">
           </p>
         </fieldset>
         <fieldset class="filter-grid">
           <legend>Сетка:</legend>
-          <ul>
+          <ul class="hidden-list-style">
             <li>
               <input class="visually-hidden" type="radio" name="grid" id="filter-adaptive" value="adaptive" checked>
               <label for="filter-adaptive">Адаптивная</label>
@@ -60,7 +63,7 @@
         </fieldset>
         <fieldset class="filter-advantage">
           <legend>Особенности:</legend>
-          <ul>
+          <ul class="hidden-list-style">
             <li>
               <input class="visually-hidden" type="checkbox" name="slider" id="filter-slider" checked>
               <label for="filter-slider">Слайдер</label>
@@ -74,7 +77,7 @@
               <label for="filter-news">Новости</label checked>
             </li>
             <li>
-              <input class="visually-hidden" type="checkbox" name="gallery" id="filter-gallery">
+              <input class="visually-hidden" type="checkbox" name="gallery" id="filter-gallery" disabled>
               <label for="filter-gallery">Галерея</label>
             </li>
             <li>
@@ -83,22 +86,22 @@
             </li>
           </ul>
         </fieldset>
-        <button class="button filter-button" value="Показать" type="submit">Показать</button>
+        <button class="button btn-gray" value="Показать" type="submit">Показать</button>
       </form>
     </aside>
     <section class="catalog-products">
       <h2 class="visually-hidden">Наши шаблоны</h2>
       <p>сортировать:</p>
-      <ul class="products-sort-list">
+      <ul class="products-sort-list hidden-list-style">
         <li class="products-sort-item"><a href="#">По цене</a></li>
-        <li class="products-sort-item"><a>По типу</a></li>
-        <li class="products-sort-item"><a>По названию</a></li>
+        <li class="products-sort-item"><a href="#">По типу</a></li>
+        <li class="products-sort-item"><a href="#">По названию</a></li>
         <li class="products-sort-icon">
           <a href="#" aria-label="По убыванию">icon-down</a>
           <a href="#" aria-label="По возврастанию">icon-up</a>
         </li>
       </ul>
-      <ul class="catalog-products-list">
+      <ul class="catalog-products-list hidden-list-style">
         <li class="catalog-products-item">
           <a class="products-item-img" href="#"><img src="img/img-sedona.jpg" alt="Заказать шаблон Sedona" width="360" height="576"></a>
           <div class="catalog-products-item-hover">
@@ -149,18 +152,18 @@
         </li>
       </ul>
       <div class="pagination">
-        <ul class="pagination-list">
+        <ul class="pagination-list hidden-list-style">
           <li class="pagination-item">
-            <a class="pagination-btn" href="#">1</a>
+            <a class="pagination-btn btn-gray active" href="#">1</a>
           </li>
           <li class="pagination-item">
-            <a class="pagination-btn" href="#">2</a>
+            <a class="pagination-btn btn-gray" href="#">2</a>
           </li>
           <li class="pagination-item">
-            <a class="pagination-btn" href="#">3</a>
+            <a class="pagination-btn btn-gray" href="#">3</a>
           </li>
         </ul>
-        <a class="button-pagination" href="#">следующая</a>
+        <a class="button-pagination btn-gray" href="#">следующая</a>
       </div>
     </section>
   </main>
@@ -180,10 +183,10 @@
     <section class="main-footer-social">
       <h2 class="visually-hidden">Ищите нас в социальных сетях</h2>
       <div class="main-footer-social">
-        <ul class="social-list">
-          <li class="social-item"><a href="vk.com" aria-label="Мы Вконтакте"></a></li>
-          <li class="social-item"><a href="facebook.com" aria-label="Мы Facebook">/a></li>
-          <li class="social-item"><a href="instagram.com" aria-label="Мы в Instagram"></a></li>
+        <ul class="social-list hidden-list-style">
+          <li class="social-item"><a class="button soc-gray" href="#" aria-label="Мы Вконтакте">Для видимости класса</a></li>
+          <li class="social-item"><a class="button soc-gray" href="#" aria-label="Мы Facebook">Для видимости класса</a></li>
+          <li class="social-item"><a class="button soc-gray" href="#" aria-label="Мы в Instagram">Для видимости класса</a></li>
         </ul>
       </div>
       <div class="main-footer-text">
@@ -192,25 +195,25 @@
       </div>
     </section>
   </footer>
-  <section class="modal write-to-us">
-    <h2>Напишите нам</h2>
-    <form class="modal-form" action="https://echo.htmlacademy.ru" method="post">
-      <p>
-        <label for="modal-form-name">Ваше имя:</label>
-        <input id="modal-form-name" name="name" type="text" placeholder="Имя Фамилия" required>
-      </p>
-      <p>
-        <label for="modal-form-email">Ваш e-mail:</label>
-        <input id="modal-form-email" name="email" type="email" placeholder="email@example.com" required>
-      </p>
-      <p>
-        <label for="form-message">Текст письма:</label>
-        <textarea class="modal-form-message" name="message" id="form-message" placeholder="В свободной форме" cols="30" rows="10" required></textarea>
-      </p>
-      <button class="button modal-button" type="submit">Отправить</button>
-    </form>
-    <button class="button modal-close" type="button" aria-label="Закрыть">Закрыть</button>
-  </section>
+    <section class="modal write-to-us">
+      <h2>Напишите нам</h2>
+      <form class="modal-form" action="https://echo.htmlacademy.ru" method="post">
+        <p class="appointment-item">
+          <label for="modal-form-name">Ваше имя:</label>
+          <input id="modal-form-name" name="name" type="text" placeholder="Имя Фамилия" required>
+        </p>
+        <p class="appointment-item">
+          <label for="modal-form-email">Ваш e-mail:</label>
+          <input id="modal-form-email" name="email" type="email" placeholder="email@example.com" required>
+        </p>
+        <p class="appointment-item">
+          <label for="form-message">Текст письма:</label>
+          <textarea class="modal-form-message" name="message" id="form-message" placeholder="В свободной форме" cols="30" rows="10" required></textarea>
+        </p>
+        <button class="button modal-button" type="submit">Отправить</button>
+      </form>
+      <button class="button modal-close" type="button" aria-label="Закрыть">Закрыть</button>
+    </section>
 </body>
 
 </html>
