@@ -2,10 +2,11 @@ body {
   margin: 0;
   padding: 0;
 
+
   font-family: Roboto, Arial, sans-serif;
   font-size: 16px;
   line-height: 24px;
-  font-weight: normal;
+  font-weight: 500;
   color: #283136;
 }
 
@@ -17,6 +18,10 @@ a {
   outline: none;
 }
 
+.active-page {
+  border-bottom: 2px solid #fb565a;
+}
+
 .hidden-list-style {
   list-style: none;
 }
@@ -25,6 +30,7 @@ a {
 .appointment-item textarea {
   font: inherit;
 
+  font-weight: normal;
   line-height: 18px;
 
   background-color: transparent;
@@ -60,7 +66,7 @@ a {
 
 .main-header h1 {
   text-align: center;
-  font-weight: bold;
+  font-weight: 500;
   font-size: 55px;
   line-height: 55px;
   color: #000;
@@ -87,7 +93,9 @@ a {
 
 .main-navigation-list a:active,
 .user-interface-list a:active {
-  border-bottom: 2px solid #fb565a;
+  border: none;
+  color: #000;
+  opacity: 0.3;
 }
 
 .main-navigation-list a:visited,
@@ -95,7 +103,12 @@ a {
   opacity: 0.3;
 }
 
+.carousel-content p {
+  font-weight: normal;
+}
+
 .carousel-content p:first-child {
+  font-weight: 500;
   font-size: 55px;
   line-height: 55px;
   color: #000;
@@ -121,6 +134,10 @@ a {
 
 .button:active {
   background-color: #d7373b;
+}
+
+.service-item p {
+  font-weight: normal;
 }
 
 .service-item h3 {
@@ -171,16 +188,25 @@ a {
   background-color: #d5d5d5;
 }
 
+.about-us-content p {
+  font-weight: normal;
+}
+
 .about-us-content p:first-child {
+  font-weight: 500;
   font-size: 45px;
   line-height: 45px;
   color: #000;
 }
 
-.about-us-list-header {
+.about-us-content p.about-us-list-header {
   font-weight: bold;
   text-transform: uppercase;
   color: #000;
+}
+
+.about-us-content-list {
+  font-weight: normal;
 }
 
 .statistics-table caption {
@@ -204,6 +230,7 @@ a {
 }
 
 .statistics-table td {
+  font-weight: normal;
   line-height: 18px;
 }
 
@@ -234,6 +261,7 @@ a {
 }
 
 .write-us p {
+  font-weight: normal;
   line-height: 18px;
   color: #666666;
 }
@@ -247,6 +275,13 @@ a {
   background-color: #e1e1e1;
 }
 
+.main-footer-text p {
+  font-weight: normal;
+  line-height: 22px;
+  vertical-align: middle;
+  color: #444;
+}
+
 .main-footer-text p:first-child {
   font-weight: bold;
   font-size: 36px;
@@ -254,19 +289,16 @@ a {
   color: #000;
 }
 
-.main-footer-text p {
-  line-height: 22px;
-  vertical-align: middle;
-  color: #444;
-}
 
-.modal{
+
+.modal {
+  font-weight: normal;
   border: 1px solid rgba(77, 77, 77, 0.1);
   box-shadow: 0px 20px 40px 0px rgba(0, 1, 1, 0.25);
 }
 
 .modal h2 {
-  font-weight: bold;
+  font-weight: 500;
   font-size: 45px;
   line-height: 45px;
   color: #000;
@@ -292,6 +324,7 @@ a {
 
 
 
+
 /* Каталог */
 
 .filter fieldset {
@@ -304,6 +337,14 @@ a {
   line-height: 30px;
   text-transform: uppercase;
   color: #000;
+}
+
+.filter label {
+  font-weight: normal;
+}
+
+.filter input {
+  font-weight: normal;
 }
 
 .filter input:hover+label,
@@ -332,6 +373,7 @@ a {
 .filter-range-to input {
   font: inherit;
 
+  font-weight: normal;
   text-align: center;
   line-height: 22px;
   text-transform: uppercase;
@@ -348,6 +390,7 @@ a {
 }
 
 .products-sort-item a {
+  font-weight: normal;
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
@@ -371,19 +414,19 @@ a {
   border-radius: 1px;
 }
 
-.products-item-img{
-	background-color: #e9e9e9;
+.products-item-img {
+  background-color: #e9e9e9;
 }
+
 .products-item-img:hover,
-.products-item-img:hover{
-	background-color: #4d4d4d;
+.products-item-img:hover {
+  background-color: #4d4d4d;
 }
 
 .catalog-products-item:hover,
 .catalog-products-item:focus {
   /* background-color: #4d4d4d; */
   box-shadow: 0px 6px 15px 0px rgba(0, 1, 1, 0.25);
-
 }
 
 .catalog-products-item-hover {
@@ -403,6 +446,7 @@ a {
 }
 
 .catalog-products-item-hover p {
+  font-weight: normal;
   line-height: 18px;
   color: #666;
 }
