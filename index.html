@@ -4,14 +4,14 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Нёрдс</title>
-  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,900" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
   <header class="main-header">
-    <div class="index-wrap">
+    <div class="header-wrap">
       <a class="main-header-logo" href="index.html"><img src="img/svg-nerds/nerds-logo.svg" width="160" height="65" alt="Логотип Нёрдс, переход на главную страницу"></a>
       <nav class="main-navigation">
         <ul class="main-navigation-list hidden-list-style">
@@ -35,18 +35,18 @@
         <i></i>
       </div>
       <ul class="slider-list">
-        <li class="slider-item">
+        <li class="slider-item visually-hidden">
           <h3>Долго, дорого,<br> скрупулезно.</h3>
           <p>Математически выверенный дизайн
             <br> для вашего сайта или мобильного приложения.</p>
           <a class="slider-item-button button" href="#">Узнать больше</a>
         </li>
-        <li class="slider-item">
+        <li class="slider-item visually-hidden">
           <h3>Любим математику как никто другой</h3>
           <p>Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
           <a class="slider-item-button button" href="#">Узнать больше</a>
         </li>
-        <li class="slider-item">
+        <li class="slider-item visually-hidden">
           <h3>Только ночь,<br> только хардкор</h3>
           <p>Работать днем, как все? Мы против этого.
             <br> Ближе к полуночи работа только начинается.</p>
@@ -132,9 +132,10 @@
     <section class="main-footer-map">
       <h2 class="visually-hidden">Как до нас добраться?</h2>
       <div class="map">
-        <img src="img/map.jpg" alt="Мы находимся по адресу: 191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8" width="1440" height="416">
+        <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A860cf4d83dac9a58d0f27938b7273daf2ec05b20b83ef6b903b8a6663742162a&amp;source=constructor" width="100%" height="416" style="width:100vw;" frameborder="0"></iframe>
+        <!-- <img src="img/map.jpg" alt="Мы находимся по адресу: 191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8" width="1440" height="416"> -->
       </div>
-      <div class="write-us-wrap">
+      <div class="container">
         <div class="write-us">
           <h3>nёrds design studio</h3>
           <p data-address>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
@@ -142,26 +143,8 @@
           <a class="button" href="#">Напишите нам</a>
         </div>
       </div>
-    </section>
-    <div class="index-wrap">
-      <section class="main-footer-social">
-        <h2 class="visually-hidden">Ищите нас в социальных сетях</h2>
-        <div class="social-block">
-          <ul class="social-list hidden-list-style">
-            <li class="social-item"><a class="button soc-gray" href="#" aria-label="Мы Вконтакте"></a></li>
-            <li class="social-item"><a class="button soc-gray" href="#" aria-label="Мы Facebook"></a></li>
-            <li class="social-item"><a class="button soc-gray" href="#" aria-label="Мы в Instagram"></a></li>
-          </ul>
-        </div>
-        <div class="main-footer-text">
-          <p>Давайте дружить, это выгодно!</p>
-          <p>Скидка 10% для друзей из социальных сетей.</p>
-        </div>
-      </section>
-    </div>
-  </footer>
-  <div class="modal-wrap">
-    <section class="modal write-to-us hidden">
+      <div class="modal-wrap">
+    <section class="modal write-to-us visually-hidden">
       <h2>Напишите нам</h2>
       <form class="modal-form" action="https://echo.htmlacademy.ru" method="post">
         <p class="appointment-item">
@@ -181,6 +164,25 @@
       <button class="modal-close" type="button" aria-label="Закрыть"></button>
     </section>
   </div>
+    </section>
+    <div class="index-wrap">
+      <section class="main-footer-social">
+        <h2 class="visually-hidden">Ищите нас в социальных сетях</h2>
+        <div class="social-block">
+          <ul class="social-list hidden-list-style">
+            <li class="social-item"><a class="button soc-gray" href="#" aria-label="Мы Вконтакте"></a></li>
+            <li class="social-item"><a class="button soc-gray" href="#" aria-label="Мы Facebook"></a></li>
+            <li class="social-item"><a class="button soc-gray" href="#" aria-label="Мы в Instagram"></a></li>
+          </ul>
+        </div>
+        <div class="main-footer-text">
+          <p>Давайте дружить, это выгодно!</p>
+          <p>Скидка 10% для друзей из социальных сетей.</p>
+        </div>
+      </section>
+    </div>
+  </footer>
+  
   <script src="js/index.js"></script>
 </body>
 
