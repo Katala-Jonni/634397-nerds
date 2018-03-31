@@ -136,5 +136,4 @@ function showDOMContentLoaded() {
     sliders[step++ % sliders.length].classList.remove('visually-hidden');
     controls[stepControl++ % sliders.length].classList.add('active');
   }, timer);
-
 }

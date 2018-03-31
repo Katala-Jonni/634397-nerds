@@ -7,7 +7,7 @@
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
-  <script src="js/index.js" defer></script>
+  <script src="js/index.min.js"></script>
 </head>
 
 <body>
@@ -65,36 +65,36 @@
                 <label for="filter-fixed">Фиксированная</label>
               </li>
               <li class="filter-grid-item">
-                <input class="visually-hidden" disabled type="radio" name="grid" id="filter-rubber" value="rubber">
+                <input class="visually-hidden" type="radio" name="grid" id="filter-rubber" value="rubber" disabled>
                 <label for="filter-rubber">Резиновая</label>
               </li>
             </ul>
           </fieldset>
-          <fieldset class="filter-advantage">
-            <legend>Особенности:</legend>
-            <ul class="filter-advantage-list hidden-list-style">
-              <li class="filter-advantage-item">
-                <input class="visually-hidden" type="checkbox" name="slider" id="filter-slider" checked>
-                <label for="filter-slider">Слайдер</label>
-              </li>
-              <li class="filter-advantage-item">
-                <input class="visually-hidden" type="checkbox" name="advantage" id="filter-advantage">
-                <label for="filter-advantage">Блок преимуществ</label>
-              </li>
-              <li class="filter-advantage-item">
-                <input class="visually-hidden" type="checkbox" name="news" id="filter-news" checked>
-                <label for="filter-news">Новости</label checked>
-              </li>
-              <li class="filter-advantage-item">
-                <input class="visually-hidden" type="checkbox" name="gallery" id="filter-gallery" disabled>
-                <label for="filter-gallery">Галерея</label>
-              </li>
-              <li class="filter-advantage-item">
-                <input class="visually-hidden" type="checkbox" name="cart" id="filter-cart">
-                <label for="filter-cart">Корзина</label>
-              </li>
-            </ul>
-          </fieldset>
+            <fieldset class="filter-advantage">
+              <legend>Особенности:</legend>
+              <ul class="filter-advantage-list hidden-list-style">
+                <li class="filter-advantage-item">
+                  <input class="visually-hidden" type="checkbox" name="slider" id="filter-slider" checked>
+                  <label for="filter-slider">Слайдер</label>
+                </li>
+                <li class="filter-advantage-item">
+                  <input class="visually-hidden" type="checkbox" name="advantage" id="filter-advantage">
+                  <label for="filter-advantage">Блок преимуществ</label>
+                </li>
+                <li class="filter-advantage-item">
+                  <input class="visually-hidden" type="checkbox" name="news" id="filter-news" checked>
+                  <label for="filter-news">Новости</label>
+                </li>
+                <li class="filter-advantage-item">
+                  <input class="visually-hidden" type="checkbox" name="gallery" id="filter-gallery" disabled>
+                  <label for="filter-gallery">Галерея</label>
+                </li>
+                <li class="filter-advantage-item">
+                  <input class="visually-hidden" type="checkbox" name="cart" id="filter-cart">
+                  <label for="filter-cart">Корзина</label>
+                </li>
+              </ul>
+            </fieldset>
           <button class="button btn-gray" value="Показать" type="submit">Показать</button>
         </form>
       </aside>
