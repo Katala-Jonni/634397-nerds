@@ -5,9 +5,8 @@
   <meta charset="UTF-8">
   <title>HTML Academy: Нёрдс Каталог</title>
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900" rel="stylesheet">
-  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/normalize.min.css">
   <link rel="stylesheet" href="css/style.css">
-  <script src="js/index.min.js"></script>
 </head>
 
 <body>
@@ -70,31 +69,31 @@
               </li>
             </ul>
           </fieldset>
-            <fieldset class="filter-advantage">
-              <legend>Особенности:</legend>
-              <ul class="filter-advantage-list hidden-list-style">
-                <li class="filter-advantage-item">
-                  <input class="visually-hidden" type="checkbox" name="slider" id="filter-slider" checked>
-                  <label for="filter-slider">Слайдер</label>
-                </li>
-                <li class="filter-advantage-item">
-                  <input class="visually-hidden" type="checkbox" name="advantage" id="filter-advantage">
-                  <label for="filter-advantage">Блок преимуществ</label>
-                </li>
-                <li class="filter-advantage-item">
-                  <input class="visually-hidden" type="checkbox" name="news" id="filter-news" checked>
-                  <label for="filter-news">Новости</label>
-                </li>
-                <li class="filter-advantage-item">
-                  <input class="visually-hidden" type="checkbox" name="gallery" id="filter-gallery" disabled>
-                  <label for="filter-gallery">Галерея</label>
-                </li>
-                <li class="filter-advantage-item">
-                  <input class="visually-hidden" type="checkbox" name="cart" id="filter-cart">
-                  <label for="filter-cart">Корзина</label>
-                </li>
-              </ul>
-            </fieldset>
+          <fieldset class="filter-advantage">
+            <legend>Особенности:</legend>
+            <ul class="filter-advantage-list hidden-list-style">
+              <li class="filter-advantage-item">
+                <input class="visually-hidden" type="checkbox" name="slider" id="filter-slider" checked>
+                <label for="filter-slider">Слайдер</label>
+              </li>
+              <li class="filter-advantage-item">
+                <input class="visually-hidden" type="checkbox" name="advantage" id="filter-advantage">
+                <label for="filter-advantage">Блок преимуществ</label>
+              </li>
+              <li class="filter-advantage-item">
+                <input class="visually-hidden" type="checkbox" name="news" id="filter-news" checked>
+                <label for="filter-news">Новости</label>
+              </li>
+              <li class="filter-advantage-item">
+                <input class="visually-hidden" type="checkbox" name="gallery" id="filter-gallery" disabled>
+                <label for="filter-gallery">Галерея</label>
+              </li>
+              <li class="filter-advantage-item">
+                <input class="visually-hidden" type="checkbox" name="cart" id="filter-cart">
+                <label for="filter-cart">Корзина</label>
+              </li>
+            </ul>
+          </fieldset>
           <button class="button btn-gray" value="Показать" type="submit">Показать</button>
         </form>
       </aside>
@@ -106,18 +105,18 @@
             <li class="products-sort-item"><a class="active-sort" href="#">По цене</a></li>
             <li class="products-sort-item"><a href="#">По типу</a></li>
             <li class="products-sort-item"><a href="#">По названию</a></li>
-            <li class="products-sort-icon">
-              <a class="active-sort" href="#" aria-label="По убыванию"></a>
-              <a href="#" aria-label="По возврастанию"></a>
-            </li>
           </ul>
+          <div class="products-sort-icon products-sort-arrows">
+            <a class="active-sort" href="#" aria-label="По убыванию"></a>
+            <a href="#" aria-label="По возврастанию"></a>
+          </div>
         </div>
         <ul class="catalog-products-list hidden-list-style">
           <li class="catalog-products-item">
-            <a class="products-item-img" href="#"><img src="img/img-sedona.jpg" alt="Заказать шаблон Sedona" width="360" height="576"></a>
+            <div class="products-item-img"><img src="img/img-sedona.jpg" alt="Заказать шаблон Sedona" width="360" height="576"></div>
             <div class="catalog-products-item-hover">
               <div class="product-wrap-hover">
-                <h3>Sedona</h3>
+                <h3><a class="catalog-products-item-link" href="#">Sedona</a></h3>
                 <p>Информационный сайт для туристов</p>
                 <a href="#" class="button">9 900 руб.</a>
               </div>
@@ -202,7 +201,7 @@
           <h3>nёrds design studio</h3>
           <p data-address>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
           <p>тел. +7 (812) 275-75-75</p>
-          <a class="button" href="#">Напишите нам</a>
+          <a class="button" href="writeus.html">Напишите нам</a>
         </div>
       </div>
       <div class="modal-wrap">
@@ -245,6 +244,7 @@
       </section>
     </div>
   </footer>
+  <script src="js/index.min.js"></script>
 </body>
 
 </html>

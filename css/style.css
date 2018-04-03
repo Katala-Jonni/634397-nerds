@@ -141,6 +141,7 @@ input[type="radio"].visually-hidden {
   height: 65px;
   padding-top: 49px;
   margin-right: 202px;
+  cursor: pointer;
 }
 
 .main-header-logo:hover,
@@ -417,6 +418,7 @@ input[type="radio"].visually-hidden {
 }
 
 
+
 /* Услуги */
 
 .service-list {
@@ -547,6 +549,7 @@ input[type="radio"].visually-hidden {
   color: rgba(0, 0, 0, 0.3);
   background-color: #d5d5d5;
 }
+
 
 
 /* О нас */
@@ -680,6 +683,7 @@ input[type="radio"].visually-hidden {
 }
 
 
+
 /* Наши работы */
 
 .our-work-list {
@@ -763,6 +767,7 @@ input[type="radio"].visually-hidden {
 .our-work-item:nth-child(3)::after {
   right: -1px;
 }
+
 
 
 /* Футер */
@@ -861,6 +866,7 @@ input[type="radio"].visually-hidden {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  flex-wrap: wrap;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
@@ -943,6 +949,7 @@ input[type="radio"].visually-hidden {
   padding-top: 7px;
   padding-bottom: 10px;
 }
+
 
 
 /* Модальное окно */
@@ -1171,11 +1178,12 @@ input[type="radio"].visually-hidden {
 }
 
 
+
 /* Фильтр */
 
 .main-catalog-filter {
   width: 260px;
-  
+
   margin: 0;
   padding: 0;
   padding-top: 8px;
@@ -1431,6 +1439,7 @@ input[type="radio"].visually-hidden {
 }
 
 
+
 /* Товары */
 
 .catalog-products,
@@ -1455,6 +1464,7 @@ input[type="radio"].visually-hidden {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  flex-wrap: wrap;
   margin-left: auto;
 }
 
@@ -1518,6 +1528,10 @@ input[type="radio"].visually-hidden {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
+}
+
+.products-sort-arrows {
+  margin-left: 0;
 }
 
 .products-sort-icon a {
@@ -1640,7 +1654,7 @@ input[type="radio"].visually-hidden {
   margin: 0;
 }
 
-.catalog-products-item-hover h3 {
+.catalog-products-item-link {
   font-weight: bold;
   font-size: 18px;
   line-height: 30px;
@@ -1666,6 +1680,7 @@ input[type="radio"].visually-hidden {
   padding-right: 62px;
   margin-top: 30px;
 }
+
 
 
 /* Пагинатор */

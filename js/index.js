@@ -39,8 +39,6 @@ function showDOMContentLoaded() {
   function getFirstSlide() {
     if (!sliders[0]) {
       return;
-    } else {
-      sliders[0].classList.remove('visually-hidden');
     }
   }
 
@@ -62,7 +60,10 @@ function showDOMContentLoaded() {
     element.forEach(function(elem) {
       if (!elem.value) {
         event.preventDefault();
-        modal.classList.toggle('animationModalError');
+        modal.classList.remove('animationModalError');
+        setTimeout(function(){
+          modal.classList.add('animationModalError');
+        });
       } else {
         if (isLocalStorage) {
           switch (elem.name) {
